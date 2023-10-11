@@ -124,6 +124,7 @@
 
 @media (max-width: 768px) {
   .register {
-    height: 120vh; /* Increase the height for smaller screens */
+    height: fit-content;
+    padding: 10px; /* Increase the height for smaller screens */
   }
 }

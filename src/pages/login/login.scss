@@ -123,5 +123,6 @@
 }
 @media (max-width: 768px) {
   .login{
-    height: 100vh;
+    height: fit-content;
+    padding: 10px;
   }}
