@@ -1,0 +1,11 @@
+.posts{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (max-width: 800px){
+  .story-container{
+    width: 200px;
+  }
+}

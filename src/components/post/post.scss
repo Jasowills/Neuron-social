@@ -1,0 +1,151 @@
+@import "../../style.scss";
+
+.post {
+  /* CSS for Dropdown */
+
+
+  @include themify($themes) {
+    -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
+    border-radius: 20px;
+    background-color: themed("bg");
+    color: themed("textColor");
+    .dropdown .MuiSvgIcon-root {
+      cursor: pointer;
+      font-size: 24px;
+      color: themed("textColor"); /* Change the color as desired */
+    }
+    .dropdown-content li {
+      padding: 10px;
+      color: themed("textColor");
+      list-style: none;
+    }
+    .dropdown-content {
+      position: absolute;
+      top: auto;
+      bottom: 100%;
+      // right: 0;
+      left: 0;
+      display: none;
+      background-color: themed("bg"); /* Background color for the dropdown */
+      border: 1px solid #ccc; /* Border for the dropdown */
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+      width: 160px; /* Adjust the width as needed */
+    }
+    .container {
+      padding: 20px;
+      border: 1px solid red;
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .userInfo {
+          display: flex;
+          gap: 20px;
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              font-weight: 500;
+            }
+
+            .date {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      .content {
+        margin: 20px 0px;
+        max-width: 500px;
+        width: 100%;
+        img {
+          margin-top: 20px;
+          margin: auto;
+          object-fit: contain;
+          width: 100%;
+          max-width: 600px;
+          display: flex;
+        }
+        p{
+          font-size: 14px;
+          padding: 6px;
+          padding-left: 0px;
+
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Style the MoreHorizIcon (you can customize this) */
+  .dropdown .MuiSvgIcon-root {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff; /* Change the color as desired */
+  }
+  
+  /* Style the dropdown content */
+  
+  
+  /* Style list items within the dropdown */
+  .dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style list items */
+  .dropdown-content li {
+    padding: 10px;
+    list-style: none;
+  }
+  
+  /* Style anchor links within the list items */
+ 
+  /* Style anchor links on hover (you can customize this) */
+  .dropdown-content a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+    color: #555; /* Link color on hover */
+  }
+  
+  /* Show the dropdown content when it's open */
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+
+
+}
