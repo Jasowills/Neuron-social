@@ -4,9 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .error-message{
+
+  .error-message {
     color: rgb(219, 16, 16);
   }
+
   .card {
     width: 95%;
     display: flex;
@@ -31,14 +33,14 @@
         font-size: 100px;
         line-height: 100px;
       }
-      
+
       p {
       }
 
       span {
         font-size: 14px;
       }
-      
+
       button {
         width: 50%;
         padding: 10px;
@@ -59,20 +61,20 @@
       justify-content: center;
 
       h1 {
-      color: #555;
+        color: #555;
       }
-      
+
       form {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        
+
         input {
-        border: none;
-        border-bottom: 1px solid lightgray;
-        padding: 20px 10px;
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
         }
-        
+
         button {
           width: 60%;
           padding: 10px;
@@ -81,6 +83,36 @@
           color: white;
           font-weight: bold;
           cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+
+      .left {
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+          font-size: 60px;
+          line-height: 60px;
+        }
+
+        button {
+          width: 70%;
+        }
+      }
+
+      .right {
+        padding: 30px;
+
+        form {
+          input {
+            padding: 10px;
+          }
         }
       }
     }
