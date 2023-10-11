@@ -49,6 +49,14 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+    {
+      path: "/home",
       element: (
         <ProtectedRoute>
           <Layout />
@@ -56,22 +64,14 @@ function App() {
       ),
       children: [
         {
-          path: "/",
+          path: "/home", // Removed the leading slash to make it relative
           element: <Home />,
         },
         {
-          path: "/profile/:id",
+          path: "profile/:id", // Removed the leading slash to make it relative
           element: <Profile />,
         },
       ],
-    },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-    {
-      path: "/register",
-      element: <Register />,
     },
   ]);
 

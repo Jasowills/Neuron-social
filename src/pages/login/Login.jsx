@@ -35,7 +35,7 @@ const Login = () => {
         localStorage.setItem("userData", JSON.stringify(responseData));
 
         // Redirect to the home page after successful login
-        navigate("/");
+        navigate("/home");
       } else {
         // Handle login failure
         setError("Invalid email or password.");

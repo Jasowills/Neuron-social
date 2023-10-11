@@ -41,7 +41,7 @@ const Register = () => {
         // Handle success
         setSuccessMessage("Signup successful. Redirecting to login...");
         setTimeout(() => {
-          navigate("/login");
+          navigate("/");
         }, 2000); // Redirect to /login after 2 seconds
       } else {
         // Handle error
@@ -65,7 +65,7 @@ const Register = () => {
             "Embark on a journey of intellectual discovery with Neuron! Social 🚀 Sign up today and join a community where knowledge knows no bounds. Connect, share, and explore the world of ideas. Your journey to intellectual enlightenment starts here!"
           </p>
           <span>Do you have an account?</span>
-          <Link to="/login">
+          <Link to="/">
             <button>Login</button>
           </Link>
         </div>
