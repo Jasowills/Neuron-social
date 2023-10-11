@@ -89,6 +89,9 @@
   }
 
   @media (max-width: 768px) {
+    .login{
+      height: fit-content;
+    }
     .card {
       flex-direction: column;
 
@@ -118,3 +121,7 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .login{
+    height: 100vh;
+  }}

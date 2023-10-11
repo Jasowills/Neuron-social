@@ -1,5 +1,5 @@
 .register {
-  height: 100vh;
+  height: 100vh; /* Default height for larger screens */
   background-color: rgb(7, 6, 39);
   display: flex;
   align-items: center;
@@ -86,6 +86,8 @@
   }
 
   @media (max-width: 768px) {
+  
+
     .card {
       flex-direction: column;
 
@@ -117,5 +119,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .register {
+    height: 120vh; /* Increase the height for smaller screens */
   }
 }
